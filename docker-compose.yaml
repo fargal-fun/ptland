@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+
+  minecraft-survival:
+    image: itzg/minecraft-server
+    container_name: minecraft-survival
+    environment:
+      EULA: "TRUE"
+    volumes:
+      - minecraft-survival:/data
+    ports:
+      - "25565:25565"
+
