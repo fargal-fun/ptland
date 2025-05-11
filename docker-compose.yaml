@@ -7,7 +7,9 @@ services:
     environment:
       EULA: "TRUE"
     volumes:
-      - minecraft-survival:/data
+      - minecraft-survival-data:/data
     ports:
       - "25565:25565"
 
+volumes:
+  minecraft-survival-data:
